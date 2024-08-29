@@ -1,6 +1,6 @@
 ## SITAR: Semi-Supervised Image Transformer for Action Recognition
 
-This repo contains implementation of SITAR.
+This repo contains implementation of our work SITAR for semi-supervised action recognition in videos.
 
 Owais Iqbal, Omprakash Chakraborty, Aftab Hussain, Rameswar Panda, and Abir Das
 
