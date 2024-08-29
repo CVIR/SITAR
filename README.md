@@ -2,6 +2,7 @@
 
 This repo contains implementation of SITAR.
 
+Owais Iqbal, Omprakash Chakraborty, Aftab Hussain, Rameswar Panda, and Abir Das
 
 ## Requirements
 The code is written for python `3.8.10`, but should work for other version with some modifications.
