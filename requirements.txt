@@ -1,0 +1,7 @@
+torch==2.0.1
+torchvision==0.15.2
+timm==0.9.2
+fvcore
+einops
+av==10.0.0
+six

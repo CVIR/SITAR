@@ -1,0 +1,7 @@
+__pycache__/
+sifar_pytorch/__pycache__/
+pretrainedCheckpoints/
+ablation/
+Bestckpt/
+checkpoint_70.08.pth
+
