@@ -99,14 +99,14 @@ The following script will split the training data into labeled and unlabeled dat
 
 ```
 python3 main.py \
- --data_dir '/scratch1/dataset/ucf101/videos' \
- --list_root '/home/omprakash/aftab/ssl-sifar-dgx/dataset_list/kadamini/ucf101_10per' \
+ --data_dir <PATH_TO_DATASET> \
+ --list_root <PATH_TO_ANNOTATION_FOLDER> \
  --use_pyav --dataset 'ucf101' \
  --opt adamw --lr 1e-5 --epochs 150 --sched cosine --duration 8 --batch-size 2 \
  --super_img_rows 3 --disable_scaleup \
  --mixup 0.8 --cutmix 1.0 --drop-path 0.1 --pretrained  \
  --model sifar_base_patch4_window12_192_3x3 \
- --output_dir './output/sup_epoch150_10per_ucf_bs2_mu7_gamma0.6_beta1_lr1e-5_temp0.5/' --hpe_to_token \
+ --output_dir <PATH_TO_OUTPUT_FOLDER> --hpe_to_token \
  --sup_thresh 150 --num_workers 4 --mu 7 --input_size 192 --temperature 0.5 \
  --gamma 0.6 --beta 1
  ```# SITAR

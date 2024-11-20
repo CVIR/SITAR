@@ -45,7 +45,7 @@ from torch.optim.lr_scheduler import StepLR, CosineAnnealingLR
 warnings.filterwarnings("ignore", category=UserWarning)
 #torch.multiprocessing.set_start_method('spawn', force=True)
 _logger = logging.getLogger(__name__)
-
+from ssl_sifar_utils import *
 
 import signal
 import traceback
@@ -292,7 +292,7 @@ def get_args_parser():
     parser.add_argument('--remark', type=str, default="--")
     parser.add_argument('--lr-cycle', type=float, default=1.0, help='LR sched cycle')
     parser.add_argument('--lr-min', type=float, default=0.0, help='min LR in sched')
-    parser.add_argument('--model-type', type=str, default='revswin', help='Revswin or Swin')
+    parser.add_argument('--model-type', type=str, default='swin', help='Swin')
     parser.add_argument('--drop-last', action='store_true', default=False, help='Drop last batch')
     parser.add_argument('--frame-order', type=str, default='normal', help='Frame order in super image')
     parser.add_argument('--no-group-loss', action='store_true', default=False, help='Drop last batch')

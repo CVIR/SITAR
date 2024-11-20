@@ -971,11 +971,8 @@ def _create_vision_transformer(variant, pretrained=False, pretrained_window_size
     print("Printing from sifar_swin.py : pretrained_model is :",pretrained_model)
     # exit(0)
 
-    if model_type == 'swin':
-        model_cls = SwinTransformer
-    else:
-        print("Not Implemented")
-    # print("Argrs are:",kwargs)
+    model_cls = SwinTransformer
+
     model = model_cls(img_size=img_size, num_classes=num_classes, **kwargs)
     model.default_cfg = default_cfg
 
